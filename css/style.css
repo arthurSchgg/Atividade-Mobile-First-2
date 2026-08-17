@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root {
+    /*Fonte*/
+    --font-family-title: 'Space Grotesk', sans-serif;
+    --font-family-text: 'Space Grotesk', sans-serif;
+    --font-family-header: 'Space Grotesk', sans-serif;
+
+    /*Grossura da fonte*/
+    --font-weight-title: 600;
+    --font-weight-text: 400;
+    --font-weight-header: 550;
+
+    /*Cor das fontes*/
+    --primary-color: #3778FA;
+    --secondary-color: #000000;
+    --tertiary-color: #ffffff;
+    --quatinary-color: #F3F3F3;
+    --quinary-color: #707070;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: var(--tertiary-color);
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 80px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 80px;
+}
+
+.hamburger-menu {
+    display: block;
+    margin: 0px 0px 0px auto;
+}
+
+header h1 {
+    font-family: var(--font-family-header);
+    font-weight: var(--font-weight-header);
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+}
+
+.introduction-title {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    color: var(--secondary-color);
+    font-size: 30px;
+    text-align: center;
+    max-width: 90%;
+}
+
+.introduction-text {
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-align: center;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.introduction-img-background {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.introduction-img-background::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.introduction-img {
+    position: relative;
+}
+
+.introduction-img img {
+    width: 100%;
+    display: block;
+}
+
+.video-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+}
+
+.video-intro-title {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    color: var(--secondary-color);
+    font-size: 25px;
+    text-align: center;
+    max-width: 80%;
+}
+
+.video-intro-img {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+.video-intro-img img {
+    width: 100%;
+    display: block;
+    margin-bottom: 150px;
+}
+
+.choose-TalentHive {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+}
+
+.choose-TalentHive-title {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    color: var(--secondary-color);
+    font-size: 25px;
+    text-align: center;
+    max-width: 60%;
+}
+
+.choose-TalentHive-background {
+    background-color: var(--quatinary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+.choose-TalentHive-img-background {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 50px auto 60px;
+}
+
+.choose-TalentHive-img-background::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 90%;
+    background: var(--tertiary-color);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.choose-TalentHive-img {
+    position: relative;
+    z-index: 2;
+}
+
+.choose-TalentHive-img img {
+    width: 55%;
+    display: block;
+    margin-left: 115px;
+}
+
+.choose-TalentHive-list {
+    list-style: none;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 70px;
+}
+
+.choose-TalentHive-list li {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-header);
+    font-size: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.choose-TalentHive-list p {
+    color: var(--quinary-color);
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+    font-size: 16px;
+    max-width: 65%;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.footer-learn-more {
+    padding: 20px;
+    gap: 20px;
+    border-bottom: 1px solid var(--tertiary-color);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 79px;
+}
+
+.footer-learn-more-title {
+    margin-top: 70px;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-text);
+    color: var(--tertiary-color);
+    font-size: 25px;
+    width: 55%;
+    margin-bottom: 30px;
+}
+
+.footer-learn-more-text {
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+    color: var(--tertiary-color);
+    font-size: 16px;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.footer-learn-more-button {
+    background-color: var(--tertiary-color);
+    padding: 15px 25px 15px 25px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 120px;
+}
+
+.footer-learn-more-button a {
+    text-decoration: none;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-title);
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+.footer-informations {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-informations-texts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.footer-informations-company-title {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    color: var(--tertiary-color);
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+
+.footer-informations-company-text {
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+    color: var(--tertiary-color);
+    text-align: left;
+    max-width: 55%;
+    font-size: 17px;
+}
+
+.footer-informations-options{
+    max-width: 100%;
+    list-style: none;
+}
+
+.footer-informations-options li {
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+    color: var(--tertiary-color);
+    font-size: 17px;
+    margin-bottom: 14px;
+    padding-right: 30px;
+    white-space: nowrap;
+    width: max-content;
+}
+
+.footer-informations-end {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10rem;
+    gap: 20px;
+    margin-bottom: 32px;
+    max-width: 55%;
+}
+
+.footer-informations-end p {
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+    color: var(--tertiary-color);
+    font-size: 17px;
+}
+
+.footer-informations-end span {
+    color: #A0DA7A;
+}
