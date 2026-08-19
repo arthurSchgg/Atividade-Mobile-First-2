@@ -235,6 +235,16 @@ footer {
     font-size: 15px;
 }
 
+.footer-informations-rules-social-media {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    row-gap: 74px;
+    column-gap: 30px;
+    margin-bottom: 140px;
+    padding: 0 40px;
+}
+
 .footer-informations {
     display: flex;
     flex-direction: row;
@@ -244,8 +254,11 @@ footer {
 .footer-informations-texts {
     display: flex;
     flex-direction: column;
-    margin-bottom: 74px;
-    margin-left: 30px;
+    grid-column: 1 / span 2;
+    gap: 22px;
+    margin-right: 100px;
+    max-width: 320px;
+    width: 100%;
 }
 
 .footer-informations-company-title {
@@ -254,17 +267,14 @@ footer {
     color: var(--tertiary-color);
     font-size: 25px;
     margin-bottom: 17px;
-    margin-right: 200px;
 }
 
 .footer-informations-company-text {
     font-family: var(--font-family-text);
     font-weight: var(--font-weight-text);
     color: var(--tertiary-color);
-    text-align: left;
-    max-width: 80%;
-    font-size: 17px;
-    
+    width: 100%;
+    white-space: normal;
 }
 
 .footer-informations-options {
@@ -272,24 +282,40 @@ footer {
     list-style: none;
 }
 
-.footer-informations-options li {
-    font-family: var(--font-family-text);
-    font-weight: var(--font-weight-text);
-    color: var(--tertiary-color);
-    font-size: 17px;
-    margin-bottom: 25px;
-    padding-right: 30px;
-    white-space: nowrap;
-    width: max-content;
+.first-column {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    grid-row: 1;
+    gap: 22px;
+    width: fit-content;
 }
 
-.footer-informations-rules-social-media {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    gap: 60px;
-    margin-bottom: 80px;
+.second-column {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 2;
+    gap: 22px;
+    width: fit-content;
+}
+
+.third-column {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 22px;
+    width: fit-content;
+}
+
+.fourth-column {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    grid-row: 2;
+    gap: 22px;
+    width: fit-content;
 }
 
 .footer-informations-rules-social-media p {
@@ -297,44 +323,7 @@ footer {
     font-weight: var(--font-weight-text);
     color: var(--tertiary-color);
     font-size: 16px;
-    white-space: wrap;
-    width: max-content;
-}
-
-.first-column {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    margin-right: 63px;
-    width: fit-content;
-}
-
-.second-column {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 1;
-    grid-row: 3 / 3;
-    gap: 22px;
-    margin-right: 63px;
-    width: fit-content;
-}
-
-.third-column {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2 / 2;
-    grid-row: 3 / 3;
-    gap: 22px;
-    margin-right: 63px;
-    width: fit-content;
-}
-
-.fourth-column {
-    display: flex;
-    flex-direction: column;
-    grid-column: 3 / 3;
-    grid-row: 3 / 3;
-    gap: 22px;
+    white-space: normal;
     width: fit-content;
 }
 
@@ -567,7 +556,7 @@ footer {
 
     .footer-learn-more-right {
         margin-top: 190px;
-        width: 50%;        
+        width: 50%;
         max-width: 500px;
     }
 
@@ -605,12 +594,12 @@ footer {
 
     .footer-informations-company-title {
         font-size: clamp(1.5rem, 2rem, 2.5rem);
-        margin: 0px 0px 10px 0px;
+        margin: 0px 0px 10px 30px;
     }
 
     .footer-informations-company-text {
         font-size: clamp(0.5rem, 1rem, 2.5rem);
-        margin: 0px;
+        margin-left: 30px;
         width: 100%;
         white-space: normal;
     }
